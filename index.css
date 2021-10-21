@@ -8,17 +8,18 @@ footer{
     margin-right: 10px;
 }
 #avatar_big{
-    width:23em; 
+    width:22em; 
+    text-align: center;
+    margin-left: auto;
     border-radius: 50%;
-    margin-bottom: 5em;
 }
 #name{
     color: white
 }
 
 #whoami{
-    width: 30em;
-    margin-top: 6em;
+    text-align: center;
+    margin-top: 4em;
 }
 
 table {
