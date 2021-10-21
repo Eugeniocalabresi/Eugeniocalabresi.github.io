@@ -10,34 +10,11 @@
         <meta property="og:image" content="img/github.png">
         <meta property="og:description" content="personal website">
         <meta property="og:locale" content="it_IT">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <style>
-
-            footer{
-                text-align: center;
-            }
-            #avatar{
-                width:30px; 
-                border-radius: 50%;
-                margin-right: 10px;
-            }
-            #name{
-                color: white
-            }
-            table {
-              font-family: arial, sans-serif;
-              width: 50%;
-            }
-            
-            td, th {
-              border: 1px solid #dddddd;
-              text-align: left;
-              padding: 8px;
-            }
-
-        </style>
+        <link rel="stylesheet" href="index.css">
+        
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -45,7 +22,6 @@
             <h7 id="name">Eugenio Calabresi</h7>
             <ul class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="/">Home</a>
-                <a class="nav-item nav-link" href="#">Features</a>
                 <a class="nav-item nav-link" href="projects/">Progetti</a>
                 <a class="nav-item nav-link" href="contacts/">Contatti</a>
             </ul> 
@@ -56,48 +32,45 @@
             
         </div>
         
-        <div class="container" style="width: 800px; text-align: center; margin-top: 3em; margin-bottom: 3em;" >
+        <div class="container" style="text-align: center; margin-top: 3em; margin-bottom: 3em;" >
             <h3>Chi sono:</h3>
             <br>
             <p style="text-align: center;">Ciao, sono Eugenio Calabresi, laureato in informatica presso l'università di Tor Vergata e attualmente IT Developer presso Frimm S.P.A. Sono una persona portata all'apprendimento del nuovo, assertiva, motivata al raggiungimento degli obiettivi, con una grande aspirazione alla crescita professionale e con capacità di adattamento.</p>
         </div>
 
-       
 
         <div class="container">
             <h3>Esperienze:</h3>
-            <table>
-                <tr>
-                    <th>Da:</th>
-                    <th>A:</th>
-                    <th>Esperienza</th>
-                </tr>
-                <tr>
-                    <td>2020</td>
-                    <td>Oggi</td>
-                    <td>IT Developer presso Frimm S.P.A</td>
-                </tr>
-                <tr>
-                    <td>2015</td>
-                    <td>2020</td>
-                    <td>Laurea Informatica presso Tor Vergata</td>
-                </tr>
-                <tr>
-                    <td>2016</td>
-                    <td>2017</td>
-                    <td>Certificazione CISCO CCNA Routing e Switching</td>
-                </tr>
-                <tr>
-                    <td>2016</td>
-                    <td>2017</td>
-                    <td>Certificazione EIPASS 7 Modules</td>
-                </tr>
-            </table>
+
+            <br>
+
+            <div class="positioning">
+                    <div class="positioning-card">
+                        <p>dal 2020 ad oggi</p>
+                        <p>IT Developer presso Frimm S.P.A</p>
+                    </div>
+                    <div class="positioning-card">
+                        <p>Nel 2020</p>
+                        <p>Laurea Informatica presso Tor Vergata</p>
+                    </div>
+                    <div class="positioning-card">
+                        <p>Dal 2016 al 2017</p>
+                        <p>Certificazione CISCO CCNA Routing e Switching</p>
+                    </div>
+                    <div class="positioning-card">
+                        <p>Dal 2016 al 2017</p>
+                        <p>Certificazione EIPASS 7 Modules</p>
+                    </div>
+            </div>
         </div>
-        <br />
+
+        
         <br />
         
         <div class="container">
+
+            <h3>Contattami:</h3>
+            <br>
             <form action="#" onsubmit="">
                 <table  class='table table-borderless'>
                     <tbody>

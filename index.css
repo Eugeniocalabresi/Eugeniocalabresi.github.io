@@ -1,0 +1,40 @@
+
+footer{
+    text-align: center;
+}
+#avatar{
+    width:30px; 
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#name{
+    color: white
+}
+table {
+    font-family: arial, sans-serif;
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.positioning{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.positioning-card{
+    flex: 1;
+    padding: 1em;
+    box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px;
+}
+
+@media (max-width: 768px){
+    .positioning{     
+        flex-direction: column;
+    }
+}
