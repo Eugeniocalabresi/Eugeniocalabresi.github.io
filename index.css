@@ -15,6 +15,12 @@ footer{
 #name{
     color: white
 }
+
+#whoami{
+    width: 30em;
+    margin-top: 6em;
+}
+
 table {
     font-family: arial, sans-serif;
     width: 50%;
