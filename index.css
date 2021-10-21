@@ -26,6 +26,10 @@ td, th {
     padding: 8px;
 }
 
+#card_img{
+    width: 5em;
+    margin-bottom: 2em;
+}
 
 .positioning{
     display: flex;
