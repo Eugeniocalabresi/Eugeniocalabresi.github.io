@@ -2,10 +2,15 @@
 footer{
     text-align: center;
 }
-#avatar{
+#avatar_small{
     width:30px; 
     border-radius: 50%;
     margin-right: 10px;
+}
+#avatar_big{
+    width:25em; 
+    border-radius: 50%;
+    margin-bottom: 5em;
 }
 #name{
     color: white
@@ -20,6 +25,7 @@ td, th {
     text-align: left;
     padding: 8px;
 }
+
 
 .positioning{
     display: flex;
