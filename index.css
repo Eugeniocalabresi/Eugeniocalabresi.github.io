@@ -35,22 +35,29 @@ td, th {
 
 #card_img{
     width: 5em;
-    margin-bottom: 2em;
 }
 
 .positioning{
     display: flex;
     flex-direction: row;
     column-gap: 10px;
-    margin-bottom: 10em;
+    margin-bottom: 5em;
 }
 
 .positioning-card{
     flex: 1;
     padding: 1em;
-    box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px 3px;
+    box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px 8px;
     border-radius: 5%;
     text-align: center;
+}
+
+#map{
+    margin-bottom: 5em;
+}
+
+#request{
+    margin-bottom: 5em;
 }
 
 @media (max-width: 768px){
