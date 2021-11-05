@@ -69,4 +69,9 @@ td, th {
         margin-right: 30px;
         margin-left: 30px;
     }
+    .positioning-card p{
+        margin-bottom: 15px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
 }
