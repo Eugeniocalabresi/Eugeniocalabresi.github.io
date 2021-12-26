@@ -19,36 +19,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_ouJHGr25eaW1QAaqDiig9");
-    })();
-
-    function sendMail(params){
-      var tempParams = {
-        from_name: document.getElementById("nome").value + " " + document.getElementById("cognome").value,
-        agency: document.getElementById("azienda").value,
-        email_contact: document.getElementById("email").value,
-        message: document.getElementById("note").value
-      };
-
-      emailjs.send('service_273f9m2','template_q9bzn1q', tempParams)
-      .then(function(res){
-        console.log("success", res.status);
-      })
-    }
-
-  </script>
-
+  
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <div style="margin-right: 50px;">
+      <div style="margin-right: 50px; margin-top: 5px;">
         <img id="avatar_small" src="img/photo1.jpg" alt="Avatar">
         <h7 id="name">Eugenio Calabresi</h7>
       </div>
@@ -146,29 +124,30 @@
   <div id="request" class="container">
     <h3>Se sei interessato lascia una richiesta:</h3>
     <br>
-    <form class="row g-3" action="javascript:void(0);">
+    <form class="row g-3" action="https://formsubmit.co/eugeniocalabresi96@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://eugeniocalabresi.github.io/pages/thankyou.html">
       <div class="col-md-6">
         <label for="nome" class="form-label">Nome:</label>
-        <input type="text" class="form-control" id="nome">
+        <input type="text" name="nome" class="form-control" id="nome" required>
       </div>
       <div class="col-md-6">
         <label for="cognome" class="form-label">Cognome:</label>
-        <input type="text" class="form-control" id="cognome">
+        <input type="text" name="cognome" class="form-control" id="cognome" required>
       </div>
       <div class="col-md-6">
         <label for="azienda" class="form-label">Azienda:</label>
-        <input type="text" class="form-control" id="azienda">
+        <input type="text" name="azienda" class="form-control" id="azienda">
       </div>
       <div class="col-md-6">
         <label for="email" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="email">
+        <input type="email" name="email" class="form-control" id="email" required>
       </div>
       <div class="col-12">
         <label for="note" class="form-label">Di cosa vogliamo Parlare?</label>
-        <textarea type="text" class="form-control" id="note" style="height:10em;"></textarea>
+        <textarea type="text" name="note" class="form-control" id="note" style="height:10em;" required></textarea>
       </div>
       <div class="col-12" style="text-align: center;">
-        <button class="btn btn-dark" onclick="sendMail()">Invio</button>
+        <button class="btn btn-dark" type="submit">Invio</button>
       </div>
     </form>
   </div>
