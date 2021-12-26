@@ -1,159 +1,202 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Eugenio Calabresi</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://github.com/eugeniocalabresi/eugeniocalabresi.github.io/">
-        <meta property="og:title" content="Git hub di Eugenio Calabresi">
-        <meta property="og:image" content="img/github.png">
-        <meta property="og:description" content="personal website">
-        <meta property="og:locale" content="it_IT">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">        <link rel="stylesheet" href="index.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div style="margin-right: 50px;">
-                <img id="avatar_small" src="img/photo1.jpg" alt="Avatar">
-                <h7 id="name">Eugenio Calabresi</h7>
-            </div>
-            
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText" >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-item nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-item nav-link" href="#request">Contatti</a>
-              </li>
-            </ul>
-          </div>
+<head>
+  <title>Eugenio Calabresi</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/eugeniocalabresi/eugeniocalabresi.github.io/">
+  <meta property="og:title" content="Git hub di Eugenio Calabresi">
+  <meta property="og:image" content="img/github.png">
+  <meta property="og:description" content="personal website">
+  <meta property="og:locale" content="it_IT">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_ouJHGr25eaW1QAaqDiig9");
+    })();
+
+    function sendMail(params){
+      var tempParams = {
+        from_name: document.getElementById("nome").value + " " + document.getElementById("cognome").value,
+        agency: document.getElementById("azienda").value,
+        email_contact: document.getElementById("email").value,
+        message: document.getElementById("note").value
+      };
+
+      emailjs.send('service_273f9m2','template_q9bzn1q', tempParams)
+      .then(function(res){
+        console.log("success", res.status);
+      })
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div style="margin-right: 50px;">
+        <img id="avatar_small" src="img/photo1.jpg" alt="Avatar">
+        <h7 id="name">Eugenio Calabresi</h7>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#request">Contatti</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div id="description" class="container" style="text-align: center; margin-top: 3em; margin-bottom: 6em;">
+    <div class="row" style="text-align: center;">
+      <div class="col-md-6" style="text-align: center;">
+        <img id=avatar_big src="img/photo1.jpg" alt="Avatar">
+      </div>
+      <div class="col-md-6" style="text-align: center;">
+        <div id="whoami">
+          <h1>Chi sono:</h1>
+          <br>
+          <p style="text-align: center;">
+            Ciao, sono Eugenio Calabresi, laureato in Informatica presso l'università di Tor Vergata
+            e attualmente IT Developer presso Frimm S.P.A. Sono una persona portata all'apprendimento del nuovo,
+            assertiva,
+            motivata al raggiungimento degli obiettivi, con una grande aspirazione alla crescita professionale e con
+            capacità di adattamento.
+          </p>
         </div>
-      </nav>
+      </div>
+    </div>
 
+  </div>
 
-        
-        <div id="description" class="container" style="text-align: center; margin-top: 3em; margin-bottom: 6em;" >
-            <div class="row" style="text-align: center;">
-                <div class="col-md-6" style="text-align: center;">
-                <img id=avatar_big src="img/photo1.jpg" alt="Avatar">
-                </div>
-                <div class="col-md-6" style="text-align: center;">
-                    <div id="whoami">
-                        <h1>Chi sono:</h1>
-                        <br>
-                        <p style="text-align: center;">
-                            Ciao, sono Eugenio Calabresi, laureato in Informatica presso l'università di Tor Vergata 
-                            e attualmente IT Developer presso Frimm S.P.A. Sono una persona portata all'apprendimento del nuovo, assertiva,
-                            motivata al raggiungimento degli obiettivi, con una grande aspirazione alla crescita professionale e con capacità di adattamento.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
+  <div id="experiences" class="container">
+    <h3>Esperienze:</h3>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 mb-3 col-md-6 mb-3 col-sm-12">
+        <div class="positioning-card">
+          <img id="card_img" src="img/frimm.png" alt="photo">
+          <p>dal 2020 ad oggi</p>
+          <h6>IT Developer presso Frimm S.P.A</h6>
         </div>
-        
-
-
-        <div class="container">
-            <h3>Esperienze:</h3>
-
-            <br>
-
-            <div class="positioning">
-                    <div class="positioning-card">
-                        <img id="card_img" src="img/frimm.png" alt="photo">
-                        <p>dal 2020 ad oggi</p>
-                        <p>IT Developer presso Frimm S.P.A</p>
-                    </div>
-                    <div class="positioning-card">
-                        <img id="card_img" src="img/torvergata.png" alt="photo">
-                        <p>Nel 2020</p>
-                        <p>Laurea Informatica presso Tor Vergata</p>
-                    </div>
-                    <div class="positioning-card">
-                        <img id="card_img" src="img/cisco.png" alt="photo">
-                        <p>Dal 2016 al 2017</p>
-                        <p>Certificazione CISCO CCNA Routing e Switching</p>
-                    </div>
-                    <div class="positioning-card">
-                        <img id="card_img" src="img/eipass.png" alt="photo">
-                        <p>Dal 2016 al 2017</p>
-                        <p>Certificazione EIPASS 7 Modules</p>
-                    </div>
-            </div>
+      </div>
+      <div class="col-lg-3 mb-3 col-md-6 mb-3 col-sm-12">
+        <div class="positioning-card">
+          <img id="card_img" src="img/torvergata.png" alt="photo">
+          <p>Nel 2020</p>
+          <h6>Laurea Informatica presso Tor Vergata</h6>
         </div>
-
-
-        <div id="map" class="container">
-            <div class="map-area">
-                <h3>Dove Sono:</h3>
-                <br>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23784.115240483698!2d12.86212632949002!3d41.82798794904599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f80a4bf965391%3A0x2770d4506cbc9a51!2s00036%20Palestrina%20RM!5e0!3m2!1sit!2sit!4v1634830916248!5m2!1sit!2sit" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                </div>
-                </div>
+      </div>
+      <div class="col-lg-3 mb-3 col-md-6 mb-3 col-sm-12">
+        <div class="positioning-card">
+          <img id="card_img" src="img/cisco.png" alt="photo">
+          <p>Dal 2016 al 2017</p>
+          <h6>Certificazione CISCO CCNA Routing e Switching</h6>
         </div>
-
-        
-        <div id="request" class="container">
-            <h3>Se sei interessato lascia una richiesta:</h3>
-            <br>
-            <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="nome" class="form-label">Nome:</label>
-                  <input type="text" class="form-control" id="nome">
-                </div>
-                <div class="col-md-6">
-                    <label for="cognome" class="form-label">Cognome:</label>
-                    <input type="text" class="form-control" id="cognome">
-                  </div>
-                <div class="col-md-6">
-                  <label for="azienda" class="form-label">Azienda:</label>
-                  <input type="text" class="form-control" id="azienda">
-                </div>
-                <div class="col-md-6">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email">
-                  </div>
-                <div class="col-12">
-                  <label for="note" class="form-label">Di cosa vogliamo Parlare?</label>
-                  <textarea type="text" class="form-control" id="note" style="height:10em;"></textarea>
-                </div>
-                <div class="col-12" style="text-align: center;">
-                    <button class="btn btn-dark" type="submit">Invio</button>
-                </div>
-              </form>
+      </div>
+      <div class="col-lg-3 mb-3 col-md-6 mb-3 col-sm-12">
+        <div class="positioning-card">
+          <img id="card_img" src="img/eipass.png" alt="photo">
+          <p>Dal 2016 al 2017</p>
+          <h6>Certificazione EIPASS 7 Modules</h6>
         </div>
-        
+      </div>
+    </div>
+  </div>
 
-    <footer class="bg-dark text-center text-white ">
-        <div class="container p-1 pb-0">
-        <section class="mb-4">
-            <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/Eugeniocalabresi" role="button" target="_blank">
-                <img src="img/github.png" width="25" height="25"/>
-            </a>
-            <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/eugeniocalabresi/" role="button" target="_blank">
-            <img src="img/instagram.svg" width="25" height="25"/>
-            </a>
-            <a class="btn btn-outline-dark btn-floating m-1" href="https://www.facebook.com/eugenio.calabresi/" role="button" target="_blank">
-                <img src="img/facebook.svg" width="25" height="25"/>
-            </a>
-        </div>
-        
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        <p class="copyright">© Copyright: Design and Developed by <a href="https://eugeniocalabresi.github.io/">Eugenio Calabresi</a>.</p>
-        </div>
-    </footer>
 
-    </body>
+  <div id="map" class="container">
+    <div class="map-area">
+      <h3>Dove Sono:</h3>
+      <br>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23784.115240483698!2d12.86212632949002!3d41.82798794904599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f80a4bf965391%3A0x2770d4506cbc9a51!2s00036%20Palestrina%20RM!5e0!3m2!1sit!2sit!4v1634830916248!5m2!1sit!2sit"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="request" class="container">
+    <h3>Se sei interessato lascia una richiesta:</h3>
+    <br>
+    <form class="row g-3" action="javascript:void(0);">
+      <div class="col-md-6">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="nome">
+      </div>
+      <div class="col-md-6">
+        <label for="cognome" class="form-label">Cognome:</label>
+        <input type="text" class="form-control" id="cognome">
+      </div>
+      <div class="col-md-6">
+        <label for="azienda" class="form-label">Azienda:</label>
+        <input type="text" class="form-control" id="azienda">
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="col-12">
+        <label for="note" class="form-label">Di cosa vogliamo Parlare?</label>
+        <textarea type="text" class="form-control" id="note" style="height:10em;"></textarea>
+      </div>
+      <div class="col-12" style="text-align: center;">
+        <button class="btn btn-dark" onclick="sendMail()">Invio</button>
+      </div>
+    </form>
+  </div>
+
+
+  <footer class="bg-dark text-center text-white ">
+    <div class="container p-1 pb-0">
+      <section class="mb-4">
+        <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/Eugeniocalabresi" role="button"
+          target="_blank">
+          <img src="img/github.png" width="25" height="25" />
+        </a>
+        <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/eugeniocalabresi/"
+          role="button" target="_blank">
+          <img src="img/instagram.svg" width="25" height="25" />
+        </a>
+        <a class="btn btn-outline-dark btn-floating m-1" href="https://www.facebook.com/eugenio.calabresi/"
+          role="button" target="_blank">
+          <img src="img/facebook.svg" width="25" height="25" />
+        </a>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p class="copyright">© Copyright: Design and Developed by <a href="https://eugeniocalabresi.github.io/">Eugenio
+          Calabresi</a>.</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>

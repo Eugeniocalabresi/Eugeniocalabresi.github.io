@@ -20,6 +20,7 @@ footer{
 #whoami{
     text-align: center;
     margin-top: 4em;
+    font-size: large;
 }
 
 table {
@@ -48,8 +49,17 @@ td, th {
     flex: 1;
     padding: 1em;
     box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px 8px;
-    border-radius: 5%;
+    border-radius: 20px;
     text-align: center;
+    height: 250px;
+}
+
+.positioning-card img{ 
+    margin-bottom: 30px;
+}
+
+#experiences{
+    margin-bottom: 5em;
 }
 
 #map{
@@ -60,7 +70,7 @@ td, th {
     margin-bottom: 5em;
 }
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     .positioning{     
         flex-direction: column;
     }
@@ -68,10 +78,11 @@ td, th {
         margin-bottom: 15px;
         margin-right: 30px;
         margin-left: 30px;
+        border-radius: 20px;
     }
     .positioning-card p{
         margin-bottom: 15px;
         margin-right: 80px;
         margin-left: 80px;
     }
-}
+} */
