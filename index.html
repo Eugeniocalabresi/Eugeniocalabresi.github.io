@@ -1,180 +1,713 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Eugenio Calabresi</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://github.com/eugeniocalabresi/eugeniocalabresi.github.io/">
-  <meta property="og:title" content="Git hub di Eugenio Calabresi">
-  <meta property="og:image" content="img/github.png">
-  <meta property="og:description" content="personal website">
-  <meta property="og:locale" content="it_IT">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eugenio Calabresi</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <div style="margin-right: 50px; margin-top: 5px;">
-        <img id="avatar_small" src="img/photo1.jpg" alt="Avatar">
-        <h7 id="name">Eugenio Calabresi</h7>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Eugenio Calabresi</h1>
+
+          <p class="title">IT Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="/">Home</a>
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:eugeniocalabresi96@live.it" class="contact-link">eugeniocalabresi96@live.it</a>
+            </div>
+
           </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="#request">Contatti</a>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+393348843604" class="contact-link">+39 3348843604</a>
+            </div>
+
           </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">30/12/1996</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Palestrina (RM)</address>
+            </div>
+
+          </li>
+
         </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          
+          <li class="social-item">
+            <a href="https://www.instagram.com/eugeniocalabresi/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Eugeniocalabresi" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/eugenio.calabresi/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/eugenio-calabresi-8964b9222/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
       </div>
-    </div>
-  </nav>
+
+    </aside>
 
 
 
-  <div id="description" class="container" style="text-align: center; margin-top: 3em; margin-bottom: 6em;">
-    <div class="row" style="text-align: center;">
-      <div class="col-md-6" style="text-align: center;">
-        <img id=avatar_big src="img/photo1.jpg" alt="Avatar">
-      </div>
-      <div class="col-md-6" style="text-align: center;">
-        <div id="whoami">
-          <h1>Chi sono:</h1>
-          <br>
-          <p style="text-align: center;">
-            Ciao, sono Eugenio Calabresi, laureato in Informatica presso l'università di Tor Vergata
-            e attualmente IT Developer presso Frimm S.P.A. Sono una persona portata all'apprendimento del nuovo,
-            assertiva,
-            motivata al raggiungimento degli obiettivi, con una grande aspirazione alla crescita professionale e con
-            capacità di adattamento.
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact me</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Ciao, sono Eugenio Calabresi, laureato in Informatica presso l'università di Tor Vergata e attualmente IT Developer
+            presso Nimis Consulting s.r.l. Sono una persona portata all'apprendimento del nuovo, assertiva, motivata al raggiungimento degli obiettivi, 
+            con una grande aspirazione alla crescita professionale e con capacità di adattamento.
           </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+          
+          <ul class="service-list">
+            
+            <li class="service-item">
+  
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+  
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+  
+                <p class="service-item-text">
+                  Sviluppo siti web statici, dinamici o tramite SSG.
+                </p>
+              </div>
+  
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  Grafica moderna con l'utilizzo del CSS.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile React apps</h4>
+
+                <p class="service-item-text">
+                  Sviluppo applicazioni iOS e Android tramite il framework React-native.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+  
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+  
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Rest Api</h4>
+  
+                <p class="service-item-text">
+                  Destrezza con l'architettura Restful APIs.
+                </p>
+              </div>
+  
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-      </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formazione</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Laurea Informatica presso Roma Tor Vergata</h4>
+
+              <span>Ottobre 2020</span>
+
+              <p class="timeline-text">
+                Preparazione tecnica incentrato su Sviluppo di sistemi software, Programmazione, Estrazione e analisi di dati
+                e Sicurezza dei sistemi.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Certificazione CISCO CCNA Routing e Switching</h4>
+
+              <span>2016 — 2017</span>
+
+              <p class="timeline-text">
+                Programma di certificazione di rete che aiuta a massimizzare l'investimento nella conoscenza di base delle reti e nello smistamento di dati.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Certificazione EIPASS 7 Modules</h4>
+
+              <span>2015-2016</span>
+
+              <p class="timeline-text">
+                Certificazione informatica European Informatics Passport.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Esperienze</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IT Developer</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                IT Developer presso Nimis Consulting s.r.l Società di Consulemza Informatica per l'Implementazione e la Gestione di Infrastrutture IT.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IT Developer</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text">
+                IT Developer presso Frimm S.p.a. Sviluppo software relativi alla gestione immobiliare.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Le mie Competenze:</h3>
+          
+          <ul class="service-list">
+            
+            <li class="service-item">
+  
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+  
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">React.js</h4>
+  
+                <p class="service-item-text">
+                  Framework javascript per lo sviluppo web dei siti dinamici.
+                </p>
+              </div>
+  
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Javascript ES6</h4>
+
+                <p class="service-item-text">
+                  Ultimo standard Javascript ECMAScript 2015.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">React Native</h4>
+
+                <p class="service-item-text">
+                  Sviluppo applicazioni iOS e Android tramite il framework javascript React-native.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+  
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+  
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">jQuery</h4>
+  
+                <p class="service-item-text">
+                  libreria js per la manipolazione di documenti HTM.
+                </p>
+              </div>
+  
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CSS</h4>
+
+                <p class="service-item-text">
+                  Grafica moderna per siti web.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+  
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+  
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Node.js</h4>
+  
+                <p class="service-item-text">
+                  Runtime system event oriented.
+                </p>
+              </div>
+  
+            </li>
+
+            <li class="service-item">
+  
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+  
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">HTML5</h4>
+  
+                <p class="service-item-text">
+                  Ultima versione del linguaggio di markup più diffuso.
+                </p>
+              </div>
+  
+            </li>
+
+            <li class="service-item">
+  
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+  
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">11ty</h4>
+  
+                <p class="service-item-text">
+                  SSG per la generazione di siti statici.
+                </p>
+              </div>
+  
+            </li>
+
+            <li class="service-item">
+  
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+  
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Nunjuks</h4>
+  
+                <p class="service-item-text">
+                  Linguaggio di markup utilizzabile in 11ty.
+                </p>
+              </div>
+  
+            </li>
+
+            <li class="service-item">
+  
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+  
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">PHP</h4>
+  
+                <p class="service-item-text">
+                  Linguaggio back-end per siti dinamici.
+                </p>
+              </div>
+  
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT ME
+      -->
+
+      <article class="contact" data-page="contact me">
+
+        <header>
+          <h2 class="h2 article-title">Contact me</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23780.883684647586!2d12.879893246659098!3d41.83668547825842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f80a4bf965391%3A0x2770d4506cbc9a51!2s00036%20Palestrina%20RM!5e0!3m2!1sit!2sit!4v1665178020847!5m2!1sit!2sit" width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formsubmit.co/eugeniocalabresi96@gmail.com" method="POST" class="form" data-form>
+            <input type="hidden" name="_next" value="thankyou.html">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="*Nome" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="*Cognome" required data-form-input>
+            </div>
+            
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Azienda">
+              <input type="text" name="fullname" class="form-input" placeholder="*Email" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="*Di cosa vogliamo parlare?" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Invia</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
 
-  </div>
-
-  <div id="experiences" class="container">
-    <h3>Esperienze:</h3>
-    <br>
-    <div class="row">
-      <div class="col-lg-3 mb-3 col-md-6 mb-3 col-sm-12">
-        <div class="positioning-card">
-          <img id="card_img" src="img/frimm.png" alt="photo">
-          <p>dal 2020 ad oggi</p>
-          <h6>IT Developer presso Frimm S.P.A</h6>
-        </div>
-      </div>
-      <div class="col-lg-3 mb-3 col-md-6 mb-3 col-sm-12">
-        <div class="positioning-card">
-          <img id="card_img" src="img/torvergata.png" alt="photo">
-          <p>Nel 2020</p>
-          <h6>Laurea Informatica presso Tor Vergata</h6>
-        </div>
-      </div>
-      <div class="col-lg-3 mb-3 col-md-6 mb-3 col-sm-12">
-        <div class="positioning-card">
-          <img id="card_img" src="img/cisco.png" alt="photo">
-          <p>Dal 2016 al 2017</p>
-          <h6>Certificazione CISCO CCNA Routing e Switching</h6>
-        </div>
-      </div>
-      <div class="col-lg-3 mb-3 col-md-6 mb-3 col-sm-12">
-        <div class="positioning-card">
-          <img id="card_img" src="img/eipass.png" alt="photo">
-          <p>Dal 2016 al 2017</p>
-          <h6>Certificazione EIPASS 7 Modules</h6>
-        </div>
-      </div>
-    </div>
-  </div>
+  </main>
 
 
-  <div id="map" class="container">
-    <div class="map-area">
-      <h3>Dove Sono:</h3>
-      <br>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23784.115240483698!2d12.86212632949002!3d41.82798794904599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f80a4bf965391%3A0x2770d4506cbc9a51!2s00036%20Palestrina%20RM!5e0!3m2!1sit!2sit!4v1634830916248!5m2!1sit!2sit"
-          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-  </div>
 
 
-  <div id="request" class="container">
-    <h3>Se sei interessato lascia una richiesta:</h3>
-    <br>
-    <form class="row g-3" action="https://formsubmit.co/eugeniocalabresi96@gmail.com" method="POST">
-      <input type="hidden" name="_next" value="https://eugeniocalabresi.github.io/pages/thankyou.html">
-      <div class="col-md-6">
-        <label for="nome" class="form-label">Nome:</label>
-        <input type="text" name="nome" class="form-control" id="nome" required>
-      </div>
-      <div class="col-md-6">
-        <label for="cognome" class="form-label">Cognome:</label>
-        <input type="text" name="cognome" class="form-control" id="cognome" required>
-      </div>
-      <div class="col-md-6">
-        <label for="azienda" class="form-label">Azienda:</label>
-        <input type="text" name="azienda" class="form-control" id="azienda">
-      </div>
-      <div class="col-md-6">
-        <label for="email" class="form-label">Email:</label>
-        <input type="email" name="email" class="form-control" id="email" required>
-      </div>
-      <div class="col-12">
-        <label for="note" class="form-label">Di cosa vogliamo Parlare?</label>
-        <textarea type="text" name="note" class="form-control" id="note" style="height:10em;" required></textarea>
-      </div>
-      <div class="col-12" style="text-align: center;">
-        <button class="btn btn-dark" type="submit">Invio</button>
-      </div>
-    </form>
-  </div>
 
 
-  <footer class="bg-dark text-center text-white ">
-    <div class="container p-1 pb-0">
-      <section class="mb-4">
-        <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/Eugeniocalabresi" role="button"
-          target="_blank">
-          <img src="img/github.png" width="25" height="25" />
-        </a>
-        <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/eugeniocalabresi/"
-          role="button" target="_blank">
-          <img src="img/instagram.svg" width="25" height="25" />
-        </a>
-        <a class="btn btn-outline-dark btn-floating m-1" href="https://www.facebook.com/eugenio.calabresi/"
-          role="button" target="_blank">
-          <img src="img/facebook.svg" width="25" height="25" />
-        </a>
-    </div>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      <p class="copyright">© Copyright: Design and Developed by <a href="https://eugeniocalabresi.github.io/">Eugenio
-          Calabresi</a>.</p>
-    </div>
-  </footer>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
