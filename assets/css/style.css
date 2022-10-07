@@ -485,7 +485,7 @@ main {
 
 @media (max-width: 1024px) {
   .navbar-link {
-    font-size: x-large;
+    font-size: large;
   }
 }
 
